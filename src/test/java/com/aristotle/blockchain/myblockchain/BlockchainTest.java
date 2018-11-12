@@ -4,18 +4,17 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestInstance;
 
 public class BlockchainTest {
 
     @Test
     public void testZeros() {
-        assertEquals("0000", Utils.zeros(4));
+        assertEquals("0000", Utils.getZeros(4));
     }
 
     public void testLotsOfZeros() {
         String str = "000000000000000000000000000000000000000000000000000000";
-        assertEquals(str.length(), Utils.zeros(str.length()));
+        assertEquals(str.length(), Utils.getZeros(str.length()));
 
     }
 

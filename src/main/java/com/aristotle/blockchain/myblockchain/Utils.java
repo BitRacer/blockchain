@@ -1,7 +1,7 @@
 package com.aristotle.blockchain.myblockchain;
 
 public class Utils {
-    static String zeros(int difficulty) {
+    static String getZeros(int difficulty) {
         return repeatZeros(new StringBuffer(), difficulty).toString();
     }
 
